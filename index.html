@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Compratodo</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="CSS/style.css">
+  </head>
+  <body>
+    <section class="portada background">
+      <header class="encabezado contenedor ">
+        <figure class="logotipo">
+          <img src="imagenes/logotipo.png" alt="Compratodo logotipo" height="70px"/>
+        </figure>
+        <nav class="menu"> <!-- menu -->
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#ropamedica">Productos</a>
+            </li>
+            <li>
+              <a href="informacion.html">Información</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="contenedor">
+        <h1 class="titulo">Compratodo</h1>
+        <h3 class="title-a">Tu sitio de compras de confianza</h3>
+        <a href="#ropamedica" class="button" type="button">Ver articulos</a>
+      </div>
+    </section>
+    <section id="ropamedica" class="ropamedica contenedor">
+      <h2>Ropa médica</h2>
+      <article class="articulo">
+        <img class="derecha" src="imagenes/Jacket negra rayas azules.jpg" alt="Jacket Negra" width= "200px" >
+        <div class="guitarra-a">
+          <h3 class="title-b">Jacket</h3>
+          <ol>
+            <li>Terno para externado</li>
+            <li>Color: Negro</li>
+            <li>Tela antifluida</li>
+          </ol>
+        </div>
+      </article>
+      <article class="articulo">
+        <img class="izquierda" src="imagenes/estetoscopio negro.jpg" alt="Estetoscopio Negro" width="200px">
+        <div class="guitarra-b">
+          <h3 class="title-b">Estetoscopio</h3>
+          <ol>
+            <li>Estetoscopio Littman</li>
+            <li>Color: Negro</li>
+            <li>Con garantía</li>
+          </ol>
+        </div>
+      </article>
+    </section>
+    <footer>
+      <div class="contenedor">
+        <div class="contacto">
+          <img src="imagenes/logotiposencillo.png" alt="logotipo sencillo">
+          <div class="links">
+            <a href="tel:+593987939222"><strong>Telefono:</strong><span>+593987939222</span></a>
+            <a href="mailto:contactos@compratodo.com"><strong>Contacto:</strong><span>contactos@compratodo.com</span></a>
+          </div>
+        </div>
+        <form class="formulario" />
+        <div class="col1">
+          <label for="nombre">Nombre</label>
+          <input type="text" required name="nombre" id="nombre" />
+          <label for="email">E-mail</label>
+          <input type="text" required name="email" id="email" />
+          <div class="sexo">
+            <label for="mujer">
+              <input type="radio" checked name="sexo" value="mujer" id="mujer" />mujer
+            </label>
+            <label for="hombre">
+              <input type="radio" name="sexo" value="hombre" id="hombre" />hombre
+            </label>
+          </div>
+          <div class="intereses">
+            <label for="comentarios">
+              <input type="checkbox" checked name="intereses" value="comentarios" id="comentarios"/>Comentarios
+            </label>
+            <label for="reclamos">
+              <input type="checkbox" name="intereses" value="reclamos" id="reclamos"/>Reclamos
+            </label>
+          </div>
+        </div>
+          <div class="col2">
+            <label for="comentarios escritos">Comentarios</label>
+              <textarea name="comentarios escritos" required id="comentarios escritos" rows="7" cols="30"></textarea>
+              <input type="submit" value="Enviar" class="button"/>
+          </div>
+
+
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
